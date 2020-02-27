@@ -1,0 +1,156 @@
+<view class="box">
+    <!-- 首页 -->
+   <view class="headerx margin-box" >
+       <view class="header">
+         <view class="header-search" >
+           <view class="img">
+               <image class="" src="../../assets/images/search.png" > </image>
+           </view>
+          <view class="search" >
+              <input class="weui-input" cursor-spacing="10rpx" 
+              placeholder="请输入关键词" placeholder-style="text-align:center;" 
+              bindconfirm="confirmSearch" bindfocus="searchSwitch" bindinput="search"  />   
+          </view>
+       </view>
+       <view class="header-left">
+           <view class="img">
+               <image class="" src="../../assets/images/music.png" > </image>
+           </view>
+          <view class="seaheaderLefttext" >
+             音乐馆 
+          </view>
+       </view>
+       </view>
+   </view>  
+   <!-- 轮播图 -->
+   <view class="" wx:if="{{searchFlag===0}}">
+         <view class="bannerx  margin-box" >
+            <view class="banner">
+                  <swiper   class="banners" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" >
+                     <swiper-item  wx:for="{{banners}}" wx:key="index">
+                        <image class="swiper-image" src="{{item.imageUrl}}" />
+                     </swiper-item>
+                  </swiper>   
+            </view>
+         </view>
+         <!-- 顶部菜单 -->
+         <view class="tagsx margin-box" >
+            <view class="tag" >
+                  <view class="tags" >
+                     <view class="img">
+                        <image class="" src="../../assets/images/tag1.png" >
+                        </image> 
+                     </view>
+                     <view class="Text" >
+                        每日推荐 
+                     </view>
+                  </view>
+               <view class="tags" >
+                     <view class="img">
+                        <image class="" src="../../assets/images/tag2.png" >
+                        </image> 
+                     </view>
+                     <view class="Text" >
+                        歌单
+                     </view>
+                  </view>
+                  <view class="tags" >
+                     <view class="img">
+                        <image class="" src="../../assets/images/tag3.png" >
+                        </image> 
+                     </view>
+                     <view class="Text" >
+                        排行榜
+                     </view>
+                  </view>
+                  <view class="tags" >
+                     <view class="img">
+                        <image class="" src="../../assets/images/tag4.png" >
+                        </image> 
+                     </view>
+                     <view class="Text" >
+                        电台
+                     </view>
+                  </view>
+                  <view class="tags" >
+                     <view class="img">
+                        <image class="" src="../../assets/images/tag5.png" >
+                        </image> 
+                     </view>
+                     <view class="Text" >
+                        直播 
+                     </view>
+                  </view>
+            </view>
+         </view>
+         <view class="recommendedx margin-box" >
+            <view class="">
+               <recommendSing hotRecommend='{{hotRecommend}}'></recommendSing>
+            </view>
+         </view>
+         <view class="newSongx  margin-box" >
+            <view class="" >
+               <newSong album="{{album}}" newSong="{{newSong}}" time="{{time}}"></newSong>
+            </view>
+         </view>
+         <view class="rankx  margin-box">
+            <rank newRank="{{newRank}}"></rank>
+         </view>
+         <view class="showx  margin-box" >
+            <show show="{{show}}"></show>
+         </view> 
+   </view>
+   <view class="" wx:if="{{searchFlag===1}}">
+      <view class="searchRecomment"  wx:if="{{recommentSwitch===0}}">
+          <view class="item" wx:for="{{searchRecomment}}" wx:key="index">
+             <view class="img" >
+                <image class="" src="../../assets/images/search.png"> </image>
+             </view>
+             <view class="keyword" >
+                 {{item.keyword}}
+             </view>
+          </view>
+      </view>
+      <view class="" wx:if="{{recommentSwitch===1}}">
+         <view class="searchContent" >
+            <scroll-view class="scroll" scroll-x="true" scroll-y="false" upper-threshold="50" lower-threshold="50" >
+               <view class="item" wx:for="{{arr}}" wx:key="index" data-item="{{item}}" data-index="{{index}}" bind:tap="item">
+                     <view class="name {{lineControl===index?'colors':''}}">
+                           {{item.name}}
+                     </view>
+                     <view class="line" wx:if="{{lineControl===index}}"></view>
+               </view>
+            </scroll-view>     
+         </view>
+          <view class="" wx:if="{{lineControl===0}}">
+               <searchAll searchAll="{{searchAll}}" interest="{{interest}}" bind:songOne="songOne"> </searchAll>
+            </view>
+            <view class="" wx:if="{{lineControl===1}}">
+               <searchsongOne searchAll="{{searchAll}}"></searchsongOne>
+            </view>
+
+             <view class="" wx:if="{{lineControl===2}}">
+               <searchAblum searchAll="{{searchAll}}"> </searchAblum>
+            </view>
+
+             <view class="" wx:if="{{lineControl===3}}">
+               <searchArtist searchAll="{{searchAll}}"></searchArtist>
+            </view>
+             <view class="" wx:if="{{lineControl===4}}">
+               <searchplayList searchAll="{{searchAll}}"></searchplayList>
+            </view>
+             <view class="" wx:if="{{lineControl===5}}">
+               <searchUser searchAll="{{searchAll}}"></searchUser>
+            </view>
+             <view class="" wx:if="{{lineControl===6}}">
+                <searchMv searchAll="{{searchAll}}"></searchMv>
+            </view>
+            <view class="" wx:if="{{lineControl===7}}">
+               <searchDj searchAll="{{searchAll}}"></searchDj>
+            </view>
+            <view class="" wx:if="{{lineControl===8}}">
+               <searchVideo searchAll="{{searchAll}}"></searchVideo>
+            </view>
+      </view>
+   </view>
+</view>

@@ -1,0 +1,35 @@
+.palyList{
+    width: 100%;
+    margin-top: 20rpx;
+}
+.playListitem{
+    display: flex;
+    justify-content: flex-start;
+}
+.playListitem .img image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 20rpx;
+}
+.playListitem .msg{
+    height: 200rpx;
+    margin-left: 20rpx;
+}
+.playListitem .msg .name1{
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    color: #383737;
+}
+.playListitem .msg .name2{
+    font-size: 24rpx;
+    height: 100rpx;
+    color: #737373 ;
+}
+.headerTitle{
+    font-size: 30rpx;
+    height: 50rpx;
+    font-weight: 600;
+    line-height: 50rpx;
+    margin-bottom: 20rpx;
+}

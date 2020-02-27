@@ -1,0 +1,40 @@
+.mlog{
+    width: 100%;  
+}
+.mlogs{
+    width: 100%;  
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx;
+}
+
+.mlogs .mlogItem{
+    width:50%;
+}
+.mlogs .mlogItem .img image{
+ width: 330rpx;
+ height: 330rpx;
+ border-radius: 30rpx;
+}
+.mlogs .mlogItem .msg{
+    height: 70rpx;
+    font-size: 26rpx;
+    color: #737373;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+ 
+}
+.mlogs .mlogItem .user{
+    display: flex;
+    justify-content: space-around;
+}
+.mlogs .mlogItem .user{
+    font-size: 24rpx;
+    margin-top: 30rpx;
+}
+.mlogs .mlogItem .user image{
+    width: 30rpx;
+    height: 30rpx;
+}

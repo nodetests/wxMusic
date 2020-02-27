@@ -1,0 +1,30 @@
+<view class="box" >
+    <view class="margin-box" >
+      <view class="artist" >
+            <view class="headerTitle" >
+                歌手
+            </view>
+           <view class="artistItem" wx:for="{{searchAll.artists}}" wx:key="index">
+               <view class="img" >
+                   <view class="">
+                        <image class="" src="{{item.picUrl}}"></image>
+                   </view>
+                   <view class="artName">
+                       {{item.name}}
+                   </view>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       <image class="" src="../../assets/images/my-active.png"></image>
+                   </view>
+                   <view class="name2">
+                       已入驻
+                   </view>
+               </view>
+           </view>
+           <view class="more" bind:tap="artist">
+              查看更多
+           </view>
+        </view>
+    </view>
+</view>

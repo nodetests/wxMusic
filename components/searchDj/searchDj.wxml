@@ -1,0 +1,25 @@
+<view class="box" >
+    <view class="margin-box" >
+     <view class="djRadio" >
+            <view class="headerTitle" >
+                电台
+            </view>
+           <view class="djRadioItem" wx:for="{{searchAll.djRadios}}" wx:key="index">
+               <view class="img" >
+                   <image class="" src="{{item.picUrl}}"></image>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       {{item.name}}
+                   </view>
+                   <view class="name2">
+                       {{item.nickname}}
+                   </view>
+               </view>
+           </view>
+           <view class="more">
+             查看更多
+           </view>
+        </view>
+    </view>
+</view>

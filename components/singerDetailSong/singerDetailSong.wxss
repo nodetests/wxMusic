@@ -1,0 +1,48 @@
+.newsong{
+    width: 100%;
+}
+.newsong .item{
+    width: 100%;
+    height: 170rpx;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx;
+}
+.newsong .item image{
+    width: 170rpx;
+    height: 170rpx;
+    border-radius: 15rpx;
+}
+.newsong .item .play image{
+    width: 70rpx;
+    height: 70rpx;
+}
+
+/* 左侧图片所在区域 */
+.newsong .item .img{
+    width: 170rpx;
+    height: 170rpx;
+}
+/* 中间文字所在区域 */
+.newsong .item .song{
+    width: 400rpx;
+    height: 170rpx;
+    margin-left: 20rpx;
+}
+.newsong .item .song .artist{
+    height: 100rpx;
+    overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 30rpx;
+    color: #454545;
+}
+.newsong .item .song .introduce{
+    height: 70rpx;
+    font-size: 26rpx;
+    color: #A1A1A1;
+}
+/* 右侧播放 */
+.newsong .item .play{
+    margin-left: 20rpx;
+}

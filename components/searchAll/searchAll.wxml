@@ -1,0 +1,255 @@
+<view class="box">
+    <view class="margin-box">
+        <view class="header" >
+            <view class="inter" >你可能感兴趣</view>
+            <view class="artist" >
+                <view class="img">
+                    <image class="" src="{{interest.artist[0].picUrl}}" ></image> 
+                </view>
+                <view class="msg">
+                    <view class="name1" >
+                       歌手：{{interest.artist[0].name}}
+                    </view>
+                    <view class="name2" >
+                      粉丝：{{interest.artist[0].fansSize}} 专辑数：{{interest.artist[0].albumSize}}
+                    </view>
+                </view>
+            </view>
+           
+            <view class="ablum" >
+                <view class="img">
+                    <image class="" src="{{interest.album[0].blurPicUrl}}" ></image> 
+                </view>
+                <view class="msg">
+                    <view class="name1" >
+                       专辑：{{interest.album[0].name}}
+                    </view>
+                    <view class="name2" >
+                        {{interest.album[0].artist.name}}
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- 单曲 -->
+        <view class="songOne">
+            <view class="songHeader" >
+                <view class="left">
+                    单曲
+                </view>
+                <view class="right" >
+                    播放全部
+                </view>
+            </view>
+            <view class="newsong">
+                <view class="item" wx:for="{{searchAll.song.songs}}" wx:key="index">
+                    <view class="song" >
+                        <view class="songName" >
+                                {{item.name}}
+                        </view>
+                        <view class="introduce" >
+                            {{searchAll.song.highText}}-{{item.al.name}}
+                        </view>
+                    </view>
+                    <view class="play" >
+                        <view class="" >
+                            <image class="" src="../../assets/images/splay.png" ></image>
+                        </view>
+                        <view class="" >
+                            <image class="" src="../../assets/images/dian.png" ></image>
+                        </view>
+                        
+                    </view>
+                </view>  
+                <view class="more" bind:tap="songOne">
+                   {{searchAll.song.moreText}}
+                </view>
+            </view>
+            
+        </view>
+        <!-- 歌单 -->
+        <view class="palyList" >
+            <view class="headerTitle" >
+                歌单
+            </view>
+           <view class="playListitem" wx:for="{{searchAll.playList.playLists}}" wx:key="index">
+               <view class="img" >
+                   <image class="" src="{{item.coverImgUrl}}"></image>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       {{item.name}}
+                   </view>
+                   <view class="name2">
+                       {{item.trackCount}}首  by{{item.creator.nickname}},播放{{item.playCount}}次
+                   </view>
+               </view>
+           </view>
+           <view class="more" bind:tap="palyList">
+              {{searchAll.playList.moreText}}>
+           </view>
+        </view>
+        <!-- mlog -->
+        <view class="mlog" >
+            <view class="headerTile" >
+                Mlog
+            </view>
+            <view class="mlogs" >
+                <view class="mlogItem" wx:for="{{searchAll.mlog.mlogs}}" wx:key="index">
+                    <view class="img" >
+                        <view class="">
+                            <image class="" src="{{item.resource.mlogBaseData.coverUrl}}"></image>
+                        </view>
+                        <view class="msg">
+                          {{item.resource.mlogBaseData.text}}
+                        </view>
+                        <view class="user">
+                             <view class=""> <image class="" src="{{item.resource.userProfile.avatarUrl}}"></image></view>
+                             <view class=""> {{item.resource.userProfile.nickname}}</view>
+                             <view class=""> {{item.resource.mlogExtVO.likedCount}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+              <view class="more" bind:tap="mlog">
+              {{searchAll.mlog.moreText}}>
+           </view>
+        </view>
+        <!-- 视频 -->
+         <view class="video" >
+            <view class="headerTile" >
+                视频
+            </view>
+            <view class="videoItem" wx:for="{{searchAll.video.videos}}" wx:key="index">
+               <view class="img" >
+                   <image class="" src="{{item.coverUrl}}"></image>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       {{item.title}}
+                   </view>
+                   <view class="name2">
+                       {{item.playTime}}  by{{item.creator[0].userName}}
+                   </view>
+               </view>
+           </view>
+            <view class="more" bind:tap="video">
+              {{searchAll.video.moreText}}>
+           </view>
+         </view>
+         <!-- 主题 -->
+        <view class="talk" >
+            <view class="headerTitle" >
+                主题
+            </view>
+           <view class="talkItem" wx:for="{{searchAll.talk.talks}}" wx:key="index">
+               <view class="img" >
+                   <image class="" src="{{item.showCover.url}}"></image>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       {{item.talkName}}
+                   </view>
+                   <view class="name2">
+                       {{item.mlogCount}}关注  {{item.participations}}参与
+                   </view>
+               </view>
+           </view>
+           <view class="more">
+              {{searchAll.talk.moreText}}>
+           </view>
+        </view>
+        <!-- 歌手 -->
+        <view class="artist" >
+            <view class="headerTitle" >
+                歌手
+            </view>
+           <view class="artistItem" wx:for="{{searchAll.artist.artists}}" wx:key="index">
+               <view class="img" >
+                   <view class="">
+                        <image class="" src="{{item.picUrl}}"></image>
+                   </view>
+                   <view class="artName">
+                       {{item.name}}
+                   </view>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       <image class="" src="../../assets/images/my-active.png"></image>
+                   </view>
+                   <view class="name2">
+                       已入驻
+                   </view>
+               </view>
+           </view>
+           <view class="more" bind:tap="artist">
+              {{searchAll.artist.moreText}}>
+           </view>
+        </view>
+        <!-- 专辑 -->
+        <view class="album" >
+            <view class="headerTitle" >
+                专辑
+            </view>
+           <view class="albumItem" wx:for="{{searchAll.album.albums}}" wx:key="index">
+               <view class="img" >
+                   <image class="" src="{{item.blurPicUrl}}"></image>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       {{item.name}}
+                   </view>
+                   <view class="name2">
+                       {{item.artist.name}}  {{item.publishTime}}
+                   </view>
+               </view>
+           </view>
+           <view class="more" bind:tap="ablum">
+              {{searchAll.album.moreText}}>
+           </view>
+        </view>
+        <!-- 电台 -->
+        <view class="djRadio" >
+            <view class="headerTitle" >
+                电台
+            </view>
+           <view class="djRadioItem" wx:for="{{searchAll.djRadio.djRadios}}" wx:key="index">
+               <view class="img" >
+                   <image class="" src="{{item.picUrl}}"></image>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       {{item.name}}
+                   </view>
+                   <view class="name2">
+                       {{item.nickname}}
+                   </view>
+               </view>
+           </view>
+           <view class="more">
+              {{searchAll.djRadio.moreText}}>
+           </view>
+        </view>
+        <!-- 用户 -->
+        <view class="user" >
+            <view class="headerTitle" >
+                用户
+            </view>
+           <view class="userItem" wx:for="{{searchAll.user.users}}" wx:key="index">
+               <view class="img" >
+                   <image class="" src="{{item.avatarUrl}}"></image>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       {{item.nickname}}
+                   </view>
+                   <view class="name2">
+                       {{item.detailDescription}}
+                   </view>
+               </view>
+           </view>
+           <view class="more" bind:tap="user">
+              {{searchAll.user.moreText}}>
+           </view>
+        </view>
+    </view>
+</view>

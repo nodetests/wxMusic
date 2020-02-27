@@ -1,0 +1,73 @@
+<view class="box" >
+    <view class="margin-box">
+        <!-- 头部信息 -->
+        <view class="header" >
+            <view class="telLogin" bind:tap="telLogin">
+                <view class="" >
+                     手机登录
+                </view>
+                 <view class="line"  wx:if="{{flag===0}}">
+                     
+                 </view>
+            </view>
+            <view class="emailLogin" bind:tap="emailLogin" >
+                <view class="">
+                     邮箱登录
+                </view>
+                 <view class="line" wx:if="{{flag===1}}">
+                     
+                 </view>
+            </view>
+        </view>
+        <!-- 输入框 -->
+        <view class="msg"  wx:if="{{flag===0}}">
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >账号</view>
+                <view class="" >
+                    <input type="text" placeholder="请输入账号" />
+                </view>
+            </view>
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >密码</view>
+                <view class="" >
+                    <input type="text" placeholder="请输入密码" />
+                </view>
+            </view> 
+        </view>
+        <view class="msg"  wx:if="{{flag===1}}">
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >账号</view>
+                <view class="" >
+                    <input type="text" placeholder="请输入账号" />
+                </view>
+            </view>
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >密码</view>
+                <view class="" >
+                    <input type="text" placeholder="请输入密码" />
+                </view>
+            </view> 
+        </view>
+        <!-- 底部按钮 -->
+        <view class="bottom" >
+            <view class="" >
+                <button bind:tap="register">前往注册</button>
+            </view>
+            <view class="" >
+                <button bind:tap="login">立即登录</button>
+            </view>
+        </view>
+    </view>
+</view>

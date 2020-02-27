@@ -1,0 +1,39 @@
+.artist{
+    width: 100%;
+    }
+    .artist .artistItem{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20rpx; 
+    }
+    .artistItem .img {
+        display: flex;
+        height: 150rpx;
+        justify-content: flex-start;
+    }
+    .artistItem .img image{
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 20rpx;
+    }
+    .artistItem .img .artName{
+        margin-left: 20rpx;
+        height: 150rpx;
+        line-height: 150rpx;
+    }
+    .artistItem .msg{
+        height: 50rpx;
+       margin-top: 50rpx;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .artistItem .msg .name1 image{
+        width: 30rpx;
+        height: 30rpx;
+    }
+    .artistItem .msg .name2{
+        font-size: 23rpx;
+        color: #737373 ;
+    
+    }

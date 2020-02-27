@@ -1,0 +1,25 @@
+<view class="box" >
+    <view class="margin-box" >     
+         <view class="video" >
+            <view class="headerTile" >
+                视频
+            </view>
+            <view class="videoItem" wx:for="{{searchAll.videos}}" wx:key="index">
+               <view class="img" >
+                   <image class="" src="{{item.coverUrl}}"></image>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       {{item.title}}
+                   </view>
+                   <view class="name2">
+                       {{item.playTime}}  by{{item.creator[0].userName}}
+                   </view>
+               </view>
+           </view>
+            <view class="more" bind:tap="video">
+              查看更多
+           </view>
+         </view>
+    </view>
+</view>

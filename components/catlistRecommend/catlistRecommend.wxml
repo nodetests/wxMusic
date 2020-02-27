@@ -1,0 +1,16 @@
+<view class="box">
+    <view class="margin-box" >
+        <view class="maleAll">
+             <view class="item" wx:for="{{hotRecommend}}" wx:key="index">
+                 <view class="intruce">
+                     <view class="img" >
+                         <image class="" src="{{item.picUrl}}"> </image>
+                     </view>
+                 </view>
+                 <view class="name" >
+                     {{item.name}}
+                 </view>
+             </view>
+        </view>
+    </view>
+</view>

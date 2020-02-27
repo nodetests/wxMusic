@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "custom-component":"../../components/custom-component/custom-component",
+    "singerDetailMain":"../../components/singerDetailMain/singerDetailMain",
+    "singerDetailSong":"../../components/singerDetailSong/singerDetailSong",
+    "singerDetailAblum":"../../components/singerDetailAblum/singerDetailAblum",
+    "singerDetailMv":"../../components/singerDetailMv/singerDetailMv"
+  },
+  "navigationStyle":"custom"
+}

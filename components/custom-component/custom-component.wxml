@@ -1,0 +1,4 @@
+
+ <view class="iconBack" >
+        <image src="../../assets/images/back.png" alt="" bind:tap="iconBack"></image>
+</view>

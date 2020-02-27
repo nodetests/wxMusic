@@ -1,0 +1,23 @@
+<view class="box" >
+   <view class="recommendx margin-box" >
+            <view class="header" >
+                <view class="headerT" > 电台推荐</view>
+                <view class="headerB">
+                    <view class="headerLeftText" >你喜欢的美文读物</view>
+                    <view class="" >
+                        <view class="headerRightText">查看更多 </view>
+                    </view>  
+                </view>
+            </view>
+            <view class="msg" >
+                <scroll-view class="scroll-x" scroll-x="true">
+                    <view class="item"  wx:for="{{show}}" wx:key="index" data-item="{{item}}" bind:tap="item">
+                        <view class="img">
+                            <image class="coverImgUrl" src="{{item.picUrl}}"> </image> 
+                            <view class="name">{{item.name}}</view>     
+                        </view>          
+                    </view>       
+               </scroll-view>
+            </view>
+   </view>
+</view>

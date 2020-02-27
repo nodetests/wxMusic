@@ -1,0 +1,26 @@
+<wxs src="../../utils/filter.wxs" module="filters"/>
+<view class="box" >
+    <view class="margin-box" >
+        <view class="album" >
+    <view class="headerTitle">
+        专辑
+    </view>
+    <view class="albumItem" wx:for="{{searchAll.albums}}" wx:key="index">
+        <view class="img" >
+            <image class="" src="{{item.blurPicUrl}}"></image>
+        </view>
+        <view class="msg" >
+            <view class="name1">
+                {{item.name}}
+            </view>
+            <view class="name2">
+                {{item.artist.name}}  {{filters.formatDate(item.publishTime)}}
+            </view>
+        </view>
+    </view>
+    <view class="more" bind:tap="ablum">
+        查看更多
+    </view>
+</view>
+    </view>
+</view>

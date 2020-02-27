@@ -1,0 +1,160 @@
+<view class="box" >
+    <view class="margin-box">
+        <!-- 头部信息 -->
+        <!-- <view class="">
+           <van-cell-group>
+             <van-field
+                value="{{ phone }}"
+                label="手机号"
+                required
+                placeholder="请输入手机号"
+                border="{{ false }}" />
+
+             <van-field
+                value="{{ password }}"
+                type="password"
+                label="密码"
+                placeholder="请输入密码"
+                required
+                border="{{ false }}"/>
+             <van-field
+                value="{{ sms }}"
+                center
+                clearable
+                required
+                label="短信验证码"
+                placeholder="请输入短信验证码"
+                border="{{ false }}"
+                use-button-slot>
+                <van-button slot="button" size="small" type="primary">发送验证码</van-button>
+             </van-field>
+             <van-field
+                value="{{ username }}"
+                required
+                clearable
+                label="用户名"
+                icon="question-o"
+                placeholder="请输入用户名"
+                bind:click-icon="onClickIcon"/>
+            </van-cell-group>
+ 
+        </view> -->
+        <view class="header" >
+            <view class="telLogin" bind:tap="telLogin">
+                <view class="" >
+                     手机注册
+                </view>
+                 <view class="line"  wx:if="{{flag===0}}">
+                     
+                 </view>
+            </view>
+            <view class="emailLogin" bind:tap="emailLogin" >
+                <view class="">
+                     邮箱注册
+                </view>
+                 <view class="line" wx:if="{{flag===1}}">
+                     
+                 </view>
+            </view>
+        </view>
+        <!-- 输入框 -->
+        <view class="msg"  wx:if="{{flag===0}}">
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >手机号</view>   
+                <view class="tel" >
+                    <input type="text" placeholder="请输入手机号" onchange="tel"/>
+                </view>
+                <view class="tmsg1" wx:if="{{tmsg===1}}" >
+                    手机号不能为空
+                </view>
+                 <view class="tmsg2" wx:if="{{tmsg===2}}">
+                    手机号填写错误
+                </view>
+            </view>
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >密码</view>
+                <view class="" >
+                    <input type="text" placeholder="请输入密码"  onchange="password" />
+                </view>
+            </view> 
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >验证码</view>
+                <view class="captchaInput" >
+                    <input type="text" placeholder="请输入验证码" onchange="captchas" />
+                </view>
+                <view class="captcha" >
+                    <van-button type="info" size="small" bind:click="captcha">发送验证码</van-button>
+                </view>
+                <!-- <view class="captcha" bind:tap="captcha"> 
+                   发送验证码
+                </view> -->
+            </view> 
+             <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >昵称</view>
+                <view class="" >
+                    <input type="text" placeholder="请输入昵称"  onchange="nickname" />
+                </view>
+            </view> 
+        </view>
+         <view class="msg"  wx:if="{{flag===1}}">
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >邮箱</view>
+                <view class="" >
+                    <input type="text" placeholder="请输入邮箱" />
+                </view>
+            </view>
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >密码</view>
+                <view class="" >
+                    <input type="text" placeholder="请输入密码" />
+                </view>
+            </view> 
+            <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >验证码</view>
+              
+                <view class="" >
+                    <input type="text" placeholder="请输入验证码" />
+                </view>
+            </view> 
+             <view class="inputs">
+                <view class="loginImg" >
+                    <image class="" src="" ></image>
+                </view>
+                <view class="username" >昵称</view>
+                <view class="" >
+                    <input type="text" placeholder="请输入昵称" />
+                </view>
+            </view> 
+        </view>
+        <!-- 底部按钮 -->
+        <view class="bottom" >
+            <view class="" >
+                <button bind:tap="login">前往登录</button>
+            </view>
+            <view class="" >
+                <button bind:tap="register">立即注册</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,25 @@
+       <view class="mlog" >
+            <view class="headerTile" >
+                Mlog
+            </view>
+            <view class="mlogs" >
+                <view class="mlogItem" wx:for="{{searchAll.mlog.mlogs}}" wx:key="index">
+                    <view class="img" >
+                        <view class="">
+                            <image class="" src="{{item.resource.mlogBaseData.coverUrl}}"></image>
+                        </view>
+                        <view class="msg">
+                          {{item.resource.mlogBaseData.text}}
+                        </view>
+                        <view class="user">
+                             <view class=""> <image class="" src="{{item.resource.userProfile.avatarUrl}}"></image></view>
+                             <view class=""> {{item.resource.userProfile.nickname}}</view>
+                             <view class=""> {{item.resource.mlogExtVO.likedCount}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+              <view class="more" bind:tap="mlog">
+              {{searchAll.mlog.moreText}}>
+           </view>
+        </view>

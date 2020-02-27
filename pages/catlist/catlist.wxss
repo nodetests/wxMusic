@@ -1,0 +1,35 @@
+.header{
+    width: 100%;
+}
+.header .tag{
+    display: flex;
+    flex: 1;
+    white-space: nowrap;
+}
+.header .tag .item{
+    display: inline-block;
+    color: #78757A;
+    font-size: 30rpx;
+    width: 25%;
+    height: 60rpx;
+    text-align: center;
+    line-height: 50rpx;
+}
+.header .tag .item .name{
+    height: 50rpx;
+}
+.header .tag .item .line{
+    width: 80%;
+    height: 5rpx;
+    background: red !important;
+    margin-left: 10%;
+}
+.colors{
+    color: #f46;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+  }

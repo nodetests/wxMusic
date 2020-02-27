@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "custom-component":"../../components/custom-component/custom-component",
+    "showComment":"../../components/showComment/showComment",
+    "showPlay":"../../components/showPlay/showPlay"
+  },
+  "navigationStyle":"custom"
+}

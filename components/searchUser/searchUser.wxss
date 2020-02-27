@@ -1,0 +1,35 @@
+.user{
+    width: 100%;
+}
+.user .userItem{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx; 
+}
+.userItem .img image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 100rpx;
+}
+.userItem .msg{
+    height: 150rpx;
+    margin-left: 20rpx;
+}
+.userItem .msg .name1{
+    font-size: 32rpx;
+    font-weight: 600;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.userItem .msg .name2{
+    height: 100rpx;
+    font-size: 23rpx;
+    color: #737373 ;
+}
+.headerTitle{
+    font-size: 30rpx;
+    height: 50rpx;
+    font-weight: 600;
+    line-height: 50rpx;
+    margin-bottom: 20rpx;
+}

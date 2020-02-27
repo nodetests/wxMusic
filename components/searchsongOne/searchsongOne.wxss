@@ -1,0 +1,67 @@
+.songOne{
+    width: 100%;
+    
+}
+.songOne .songHeader{
+    display: flex;
+    justify-content: space-between;
+    height: 50rpx;
+}
+.songOne .left{
+font-size: 30rpx;
+height: 50rpx;
+font-weight: 600;
+line-height: 50rpx;
+}
+.songOne .right{
+    font-size: 26rpx;
+   height: 50rpx;
+   line-height: 50rpx;
+   border: 2rpx solid #efefef;
+   border-radius: 15rpx;
+}
+.newsong{
+    width: 100%;
+}
+.newsong .item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20rpx;
+}
+
+.newsong .item .play image{
+    width: 50rpx;
+    height: 50rpx;
+}
+.newsong .item .song{
+    width: 80%;
+}
+.newsong .item .song .songName{
+    font-size: 28rpx;
+    color: #2E2E2E;
+}
+.newsong .item .song .introduce{
+    font-size: 23rpx;
+    color: #A1A1A1;
+}
+/* 右侧播放 */
+.newsong .item .play{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.more{
+    width: 100%;
+    font-size: 28rpx;
+    text-align: center;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+.headerTitle{
+    font-size: 30rpx;
+    height: 50rpx;
+    font-weight: 600;
+    line-height: 50rpx;
+    margin-bottom: 20rpx;
+}

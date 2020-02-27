@@ -1,0 +1,39 @@
+<view class="box">
+    <view class="margin-box">
+        <view class="songOne">
+            <view class="songHeader" >
+                <view class="left">
+                    单曲
+                </view>
+                <view class="right" >
+                    播放全部
+                </view>
+            </view>
+            <view class="newsong">
+                <view class="item" wx:for="{{searchAll.songs}}" wx:key="index">
+                    <view class="song" >
+                        <view class="songName" >
+                                {{item.name}}
+                        </view>
+                        <view class="introduce" >
+                            {{item.artists.name}}-{{item.album.name}}
+                        </view>
+                    </view>
+                    <view class="play" >
+                        <view class="" >
+                            <image class="" src="../../assets/images/splay.png" ></image>
+                        </view>
+                        <view class="" >
+                            <image class="" src="../../assets/images/dian.png" ></image>
+                        </view>
+                        
+                    </view>
+                </view>  
+                <view class="more" bind:tap="songOne">
+                    查看更多
+                </view>
+            </view>
+        </view>
+    </view>
+</view>      
+

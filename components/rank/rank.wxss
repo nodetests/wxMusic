@@ -1,0 +1,78 @@
+.header{
+    width: 100%;
+    height: 100%;
+ }
+ .headerT{
+     font-size: 26rpx;
+     color: #666;
+ }
+ .headerB{
+     width: 100%;
+     height: 40rpx;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 5rpx;
+ }
+ .headerB .headerLeftText{
+     font-size: 30rpx;
+     font-weight: 700;
+     color: #353535;
+     line-height: 40rpx;
+ }
+ .headerB .headerRightText{
+   width: 150rpx;
+   height: 40rpx; 
+   font-size: 24rpx;
+   line-height: 40rpx;
+   text-align: center;
+   border: 1px solid #666;
+   color: #666;
+   border-radius: 15rpx;
+ }
+.msg{
+    margin-top: 20rpx;
+    background: #efefef;
+}
+
+.msg .item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20rpx;
+    width: 100%;
+    height: 200rpx;
+}
+.msg  .item .newRankimg{
+    width: 20%;
+    height: 170rpx;
+    }
+.msg  .item .newRankimg image{
+    width: 170rpx;
+    height: 170rpx;
+    }
+.msg .item  .rank{
+    width: 30rpx;
+    height: 200rpx;
+    line-height: 200rpx;
+    font-size: 28rpx;
+}
+.msg .item .rankmsg{
+    width:50%;
+    height: 200rpx;
+    display: flex;
+    justify-content: flex-start;
+}
+.msg .item .rankmsg .songName{
+    max-width: 200rpx;
+    overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 28rpx;
+    color: #353535;
+    line-height: 200rpx;
+    font-weight: 600;
+}
+.msg .item .rankmsg .artist{
+    font-size: 26rpx;
+    color: #666;
+    line-height: 200rpx;
+}

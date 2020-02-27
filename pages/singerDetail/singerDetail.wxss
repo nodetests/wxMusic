@@ -1,0 +1,103 @@
+
+
+.header{
+    width: 100%;
+    height: 600rpx;
+    position: relative;
+}
+
+.header .artImg{
+    width: 100%;
+    height: 100%;
+} 
+.header .artImg image{
+    width: 100%;
+    height: 100%;
+}
+.header .artDesc{
+    position: absolute;    
+    top: 100rpx;
+    width: 96%;
+    margin-left: 2%;
+    top: 300rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.header .artDesc  .left{
+    width: 50%;
+}
+.header .artDesc .right{
+    width: 50%;
+}
+.header .artDesc .artName{
+    font-size: 34rpx;
+    color: #fff;
+    font-weight: 600;
+}
+.header .artDesc .rankMsg{
+    font-size: 26rpx;
+    color: #FFF5EE;
+}
+.header .artDesc .fans{
+    width: 300rpx;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header .artDesc  .right{
+    display: flex;
+    justify-content: flex-start;
+   margin-top: 90rpx;
+}
+.header .artDesc  .right view{
+    width: 140rpx;
+    height: 60rpx;
+    font-size: 25rpx;
+    color: antiquewhite;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 15rpx;
+}
+.header .artDesc  .right .btn1{
+    background: #FE3A3B;
+}
+.header .artDesc  .right .btn2{
+    background: #6A6A6A;
+    margin-left: 20rpx;
+}
+.artDetail{
+    background: #fff;
+}
+.tags{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    height: 50rpx;
+    margin-top: 12rpx;
+}
+
+.tags .item{
+    width: 20%;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    color: #5B5B5B;
+    font-size: 30rpx;
+}
+.tags .item .line{
+    width: 80%;
+    margin-left: 10%;
+    height: 6rpx;
+    background: #FE3A3B;
+}
+.tags .item:nth-child(1){
+    border-radius: 30rpx 0 0 0;
+}
+.tags .item:nth-child(5){
+    border-radius: 0 30rpx 0 0;
+}
+.content{
+    width: 96%;
+   margin-top: 20rpx;
+   margin-left: 2%;
+}

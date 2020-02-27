@@ -1,0 +1,374 @@
+.margin-box{
+    width: 96%;
+    margin-left: 2%;
+}
+.header .inter{
+    font-size: 27rpx;
+    color: #A1A1A1;
+}
+.header .ablum{
+    display: flex;
+    justify-content: flex-start;
+}
+.header .ablum .img image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 20rpx;
+}
+.header .ablum .msg{
+    height: 150rpx;
+    margin-left: 20rpx;
+}
+.header .ablum .msg .name1{
+    height: 90rpx;
+    font-size: 28rpx;
+    color: #737373;
+    line-height: 90rpx;
+}
+.header .ablum .msg .name2{
+    height: 60rpx;
+    font-size: 24rpx;
+    color: #7797B6;
+}
+
+.header .artist{
+    display: flex;
+    justify-content: flex-start;
+}
+.header .artist .img image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 20rpx;
+}
+.header .artist .msg{
+    height: 150rpx;
+    margin-left: 20rpx;
+}
+.header .artist .msg .name1{
+    height: 90rpx;
+    font-size: 28rpx;
+    color: #7797B6;
+    line-height: 90rpx;
+}
+.header .artist .msg .name2{
+    height: 60rpx;
+    font-size: 24rpx;
+    color: #737373;
+}
+.songOne{
+    width: 100%;
+    
+}
+.songOne .songHeader{
+    display: flex;
+    justify-content: space-between;
+    height: 50rpx;
+}
+.songOne .left{
+font-size: 30rpx;
+height: 50rpx;
+font-weight: 600;
+line-height: 50rpx;
+}
+.songOne .right{
+    font-size: 26rpx;
+   height: 50rpx;
+   line-height: 50rpx;
+   border: 2rpx solid #efefef;
+   border-radius: 15rpx;
+}
+.newsong{
+    width: 100%;
+}
+.newsong .item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20rpx;
+}
+
+.newsong .item .play image{
+    width: 50rpx;
+    height: 50rpx;
+}
+.newsong .item .song{
+    width: 80%;
+}
+.newsong .item .song .songName{
+    font-size: 28rpx;
+    color: #2E2E2E;
+}
+.newsong .item .song .introduce{
+    font-size: 23rpx;
+    color: #A1A1A1;
+}
+/* 右侧播放 */
+.newsong .item .play{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.more{
+    width: 100%;
+    font-size: 28rpx;
+    text-align: center;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+.palyList{
+    width: 100%;
+    margin-top: 20rpx;
+}
+.playListitem{
+    display: flex;
+    justify-content: flex-start;
+}
+.playListitem .img image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 20rpx;
+}
+.playListitem .msg{
+    height: 200rpx;
+    margin-left: 20rpx;
+}
+.playListitem .msg .name1{
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    color: #383737;
+}
+.playListitem .msg .name2{
+    font-size: 24rpx;
+    height: 100rpx;
+    color: #737373 ;
+}
+.headerTitle{
+    font-size: 30rpx;
+    height: 50rpx;
+    font-weight: 600;
+    line-height: 50rpx;
+    margin-bottom: 20rpx;
+}
+.mlog{
+    width: 100%;  
+}
+.mlogs{
+    width: 100%;  
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx;
+}
+
+.mlogs .mlogItem{
+    width:50%;
+}
+.mlogs .mlogItem .img image{
+ width: 330rpx;
+ height: 330rpx;
+ border-radius: 30rpx;
+}
+.mlogs .mlogItem .msg{
+    height: 70rpx;
+    font-size: 26rpx;
+    color: #737373;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+ 
+}
+.mlogs .mlogItem .user{
+    display: flex;
+    justify-content: space-around;
+}
+.mlogs .mlogItem .user{
+    font-size: 24rpx;
+    margin-top: 30rpx;
+}
+.mlogs .mlogItem .user image{
+    width: 30rpx;
+    height: 30rpx;
+}
+.video{
+    width: 100%;
+}
+.video .videoItem{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx;
+}
+.videoItem .img image{
+    width: 300rpx;
+    height: 200rpx;
+}
+.videoItem .msg{
+    height: 200rpx;
+    margin-left: 20rpx;
+}
+.videoItem .msg .name1{
+    height: 80rpx;
+    font-size: 27rpx;
+    color: #737373;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.videoItem .msg .name2{
+    font-size: 23rpx;
+    height: 130rpx;
+    color: #737373 ;
+}
+
+.talk{
+    width: 100%;
+}
+.talk .talkItem{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx; 
+}
+.talkItem .img image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 20rpx;
+}
+.talkItem .msg{
+    height: 150rpx;
+    margin-left: 20rpx;
+}
+.talkItem .msg .name1{
+    font-size: 32rpx;
+    font-weight: 600;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.talkItem .msg .name2{
+    height: 50rpx; 
+    font-size: 23rpx;
+    color: #737373 ;
+}
+.artist{
+width: 100%;
+}
+.artist .artistItem{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20rpx; 
+}
+.artistItem .img {
+    display: flex;
+    height: 150rpx;
+    justify-content: flex-start;
+}
+.artistItem .img image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 20rpx;
+}
+.artistItem .img .artName{
+    margin-left: 20rpx;
+    height: 150rpx;
+    line-height: 150rpx;
+}
+.artistItem .msg{
+    height: 50rpx;
+   margin-top: 50rpx;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.artistItem .msg .name1 image{
+    width: 30rpx;
+    height: 30rpx;
+}
+.artistItem .msg .name2{
+    font-size: 23rpx;
+    color: #737373 ;
+
+}
+.album{
+    width: 100%;
+}
+.album .albumItem{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx; 
+}
+.albumItem .img image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 20rpx;
+}
+.albumItem .msg{
+    height: 150rpx;
+    margin-left: 20rpx;
+}
+.albumItem .msg .name1{
+    font-size: 32rpx;
+    font-weight: 600;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.albumItem .msg .name2{
+    height: 50rpx; 
+    font-size: 23rpx;
+    color: #737373 ;
+}
+.djRadio{
+    width: 100%;
+}
+.djRadio .djRadioItem{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx; 
+}
+.djRadioItem .img image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 20rpx;
+}
+.djRadioItem .msg{
+    height: 150rpx;
+    margin-left: 20rpx;
+}
+.djRadioItem .msg .name1{
+    font-size: 32rpx;
+    font-weight: 600;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.djRadioItem .msg .name2{
+    height: 50rpx; 
+    font-size: 23rpx;
+    color: #737373 ;
+}
+.user{
+    width: 100%;
+}
+.user .userItem{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx; 
+}
+.userItem .img image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 100rpx;
+}
+.userItem .msg{
+    height: 150rpx;
+    margin-left: 20rpx;
+}
+.userItem .msg .name1{
+    font-size: 32rpx;
+    font-weight: 600;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.userItem .msg .name2{
+    height: 100rpx;
+    font-size: 23rpx;
+    color: #737373 ;
+}

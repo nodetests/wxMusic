@@ -1,0 +1,76 @@
+/* .mlog{
+    width: 100%;  
+}
+.mlogs{
+    width: 100%;  
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx;
+}
+
+.mlogs .mlogItem{
+    width:50%;
+}
+.mlogs .mlogItem .img image{
+ width: 330rpx;
+ height: 330rpx;
+ border-radius: 30rpx;
+}
+.mlogs .mlogItem .msg{
+    height: 70rpx;
+    font-size: 26rpx;
+    color: #737373;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+ 
+}
+.mlogs .mlogItem .user{
+    display: flex;
+    justify-content: space-around;
+}
+.mlogs .mlogItem .user{
+    font-size: 24rpx;
+    margin-top: 30rpx;
+}
+.mlogs .mlogItem .user image{
+    width: 30rpx;
+    height: 30rpx;
+} */
+
+.mlog{
+    width: 100%;
+}
+.mlog .mlogItem{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx; 
+}
+.mlogItem .img image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 100rpx;
+}
+.mlogItem .msg{
+    height: 150rpx;
+    margin-left: 20rpx;
+}
+.mlogItem .msg .name1{
+    font-size: 32rpx;
+    font-weight: 600;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.mlogItem .msg .name2{
+    height: 100rpx;
+    font-size: 23rpx;
+    color: #737373 ;
+}
+.headerTitle{
+    font-size: 30rpx;
+    height: 50rpx;
+    font-weight: 600;
+    line-height: 50rpx;
+    margin-bottom: 20rpx;
+}

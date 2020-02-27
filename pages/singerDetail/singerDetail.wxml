@@ -1,0 +1,71 @@
+<view class="box" >
+   <custom-component></custom-component>
+    <view class="header" >
+        <view class="artImg" >
+            <image class="" src="{{art.picUrl}}"></image>
+        </view>
+        <view class="artDesc" > 
+                <view class="left">
+                     <view class="artName" >
+                        {{art.name}}
+                    </view>      
+                    <view class="rankMsg" >
+                        <view class="rank">
+                            歌手榜华语地区NO.3
+                        </view>
+                        <view class="fans">
+                            <view class="">
+                                关注：0
+                            </view>
+                            <view class="line" >
+                                
+                            </view>
+                            <view class="" >
+                                粉丝：382.4万
+                            </view>
+                        </view>
+                        <view class="" >
+                            入驻艺人
+                        </view>
+                    </view> 
+                </view>
+                <view class="right" >
+                    <view class="btn1" >
+                      + 关注 
+                    </view>
+                    <view class="btn2" >
+                        发私信
+                    </view>
+                </view>      
+        </view>
+    </view> 
+    <view class="artDetail">
+        <view class="borders">
+            <view class="tags" >
+                <view class="item" wx:for="{{arr}}" wx:key="index" data-item="{{item}}" data-index="{{index}}" bind:tap="item">
+                    <view class="">
+                         {{item.name}}
+                    </view>
+                    <view class="line" wx:if="{{flag===index}}">
+                        
+                    </view>
+                </view>
+            </view>
+            <view class="content" wx:if="{{flag===0}}">
+               <singerDetailMain main="{{main}}" mainHotsong="{{mainHotsong}}"></singerDetailMain>
+            </view>
+            <view class="content" wx:if="{{flag===1}}">
+              <singerDetailSong artSong="{{artSong}}"></singerDetailSong>
+            </view>
+            <view class="content" wx:if="{{flag===2}}">
+               <singerDetailAblum ablum="{{ablum}}"></singerDetailAblum>
+            </view>
+            <view class="content" wx:if="{{flag===3}}">
+              <singerDetailMv mv="{{mv}}"></singerDetailMv>
+            </view>
+            <view class="content" wx:if="{{flag===4}}">
+               5555
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,20 @@
+
+<view class="box" >
+    <view class="margin-box">
+        <view class="ablum">
+            <view class="item" wx:for="{{ablum}}" wx:key="index">
+                <view class="ablumImg" >
+                    <image class="" src="{{item.blurPicUrl}}" >  </image>
+                </view>
+                <view class="ablumName">
+                    <view class="name">
+                         {{item.name}}
+                    </view>
+                     <view class="date" >
+                         2020.02.02
+                     </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

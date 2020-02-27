@@ -1,0 +1,66 @@
+<view class="box" >
+     <custom-component></custom-component>
+        <view class="header" >
+            <view class="artImg" >
+                <image class="" src="{{dj.picUrl}}"></image>
+            </view>
+            <view class="artDesc" > 
+                    <view class="left">
+                        <view class="artName" >
+                            {{dj.name}}
+                        </view>   
+                        <view class="count" >
+                            {{count}}万人已订阅
+                        </view>   
+                    </view>
+                    <view class="right" >
+                        <view class="btn1" >
+                          订阅 
+                        </view>
+                    </view>      
+            </view>
+        </view> 
+        <view class="user" >
+            <view class="username" >
+                主播
+            </view>
+            <view class="msg">
+                <view class="msgDetail">
+                    <view class="img">
+                        <image class="" src="{{dj.dj.avatarUrl}}" ></image>
+                    </view>
+                    <view class="introce" >
+                        <view class="name" >
+                        {{dj.name}}
+                        </view>
+                        <view class="type" >
+                            网易音乐人
+                        </view>
+                    </view> 
+                </view>
+                <view class="beauti">
+                    赞赏
+                </view>
+            </view>
+        </view>
+        <view class="tag">
+            <view class="tags"  bind:tap="tagSwitch1">
+                 <view class="name {{tagSwitch===0 ?'colors':''}}">
+                     详情
+                </view>
+               <view class="line" wx:if="{{tagSwitch===0}}"> </view>
+            </view>
+            <view class="tags"  bind:tap="tagSwitch2">
+                <view class="name {{tagSwitch===1?'colors':''}}">
+                     节目
+                </view>
+                  <view class="line"  wx:if="{{tagSwitch===1}}"> </view>
+            </view>
+        </view>
+        <view class="showComment" wx:if="{{tagSwitch===0}}">
+           <showComment comments="{{comments}}"></showComment>
+        </view>
+        <view class="" wx:if="{{tagSwitch===1}}">
+           <showPlay></showPlay>
+        </view>
+</view>

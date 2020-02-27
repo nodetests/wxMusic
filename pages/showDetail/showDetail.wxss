@@ -1,0 +1,124 @@
+.header{
+    width: 100%;
+    height: 600rpx;
+    position: relative;
+}
+
+.header .artImg{
+    width: 100%;
+    height: 100%;
+} 
+.header .artImg image{
+    width: 100%;
+    height: 100%;
+}
+.header .artDesc{
+    position: absolute;    
+    width: 96%;
+    margin-left: 2%;
+    top: 500rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.header .artDesc  .left{
+    width: 50%;
+}
+.header .artDesc .right{
+    width: 50%;
+}
+
+.header .artDesc  .left .count{
+    font-size: 25rpx;
+    font-weight: 550;
+    color:antiquewhite; 
+}
+.header .artDesc .artName{
+    font-size: 34rpx;
+    color: #fff;
+    font-weight: 600;
+}
+  
+.header .artDesc  .right{
+    display: flex;
+    justify-content: flex-end;
+}
+.header .artDesc  .right view{
+    width: 140rpx;
+    height: 60rpx;
+    font-size: 25rpx;
+    color: antiquewhite;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 15rpx;
+}
+.header .artDesc  .right .btn1{
+    background: #FE3A3B;
+}
+.tag{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rpx;
+}
+.tag .tags{
+    width: 50%;
+}
+.tags .name{
+    width: 100%;
+    font-size: 32rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    color: #181717;
+}
+.tags .colors{
+    color: #FE3A3B;
+    font-weight: 530;
+}
+.tags .line{
+    width: 50%;
+    margin-left: 25%;
+    height: 5rpx;
+    background: #FE3A3B;
+}
+
+.user .username{
+    margin-top: 15rpx;
+    font-size: 35rpx;
+    font-weight: 550;
+}
+.user  .msg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20rpx;
+    height: 130rpx;
+}
+.user .msg .msgDetail{
+    height: 130rpx;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.user  .msgDetail image{
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 65rpx;
+}
+.user .msg .beauti{
+    width: 130rpx;
+    height: 50rpx;
+    border: 3rpx solid #f46;
+    color: #f46;
+    text-align: center;
+    line-height: 50rpx;
+    border-radius:20rpx;
+    margin-right: 50rpx;
+}
+
+.user .msgDetail .introce .name{
+    color: #7E7E7E;
+}
+
+.showComment{
+    margin-top: 10rpx;
+}

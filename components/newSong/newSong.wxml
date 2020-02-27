@@ -1,0 +1,56 @@
+<view class="box" >
+    <view class="time">
+        {{time}}
+    </view>
+    <view class="tag" >
+        <view class="switch">
+            <view class="{{flag===1?'switchActive':'' }}"  bind:tap="newSongActive">新歌</view>
+            <view class="line" ></view>
+            <view class="{{flag===2?'switchActive':'' }}"  bind:tap="albumActive">新碟</view>
+        </view>
+         <view class="more">
+             <view class="" wx:if="{{flag===1}}" bind:tap="newsong">
+                更多新歌 
+             </view>
+              <view class="" wx:if="{{flag===2}}" bind:tap="newsong">
+                 更多新碟
+             </view>
+         </view>
+    </view>
+     <view class="newsong" wx:if="{{flag===1}}" >
+          <view class="item" wx:for="{{newSong}}" wx:key="index" data-item="{{item}}" bind:tap="songPlay">
+                <view class="img" >
+                    <image class="" src="{{item.album.blurPicUrl}}" ></image>
+                </view>
+                <view class="song" >
+                    <view class="artist" >
+                            {{item.name}}-{{item.artists[0].name}}
+                    </view>
+                    <view class="introduce" >
+                        相依直到白首
+                    </view>
+                </view>
+                <view class="play" >
+                    <image class="" src="../../assets/images/nplay.png" ></image>
+                </view>
+          </view>  
+     </view>
+     <view class="newsong" wx:if="{{flag===2}}">
+                   <view class="item" wx:for="{{album}}" wx:key="index">
+                <view class="img" >
+                    <image class="" src="{{item.blurPicUrl}}" ></image>
+                </view>
+                <view class="song" >
+                    <view class="artist" >
+                            {{item.name}}-{{item.artists[0].name}}
+                    </view>
+                    <view class="introduce" >
+                        相依直到白首
+                    </view>
+                </view>
+                <view class="play" >
+                    <image class="" src="../../assets/images/nplay.png" ></image>
+                </view>
+          </view>  
+     </view>
+</view>

@@ -1,0 +1,48 @@
+<view class="box" >
+    <view class="margin-box">
+         <view class="newHotSong" >
+             <view class="newHot" >
+                 近期热门
+             </view>
+             <view class="more" >
+                 更多热歌
+             </view>
+         </view>
+         <view class="newsong" >
+            <view class="item" wx:for="{{mainHotsong}}" wx:key="index">
+                <view class="img" >
+                    <image class="" src="{{item.al.picUrl}}" ></image>
+                </view>
+                <view class="song" >
+                    <view class="artist" >
+                        <view class="artistName" >
+                            {{item.name}}
+                        </view>
+                          <view class="introduce" >
+                            {{item.name}}-{{main.name}}
+                          </view>  
+                    </view>
+                </view>
+                <view class="play" >
+                    <image class="" src="../../assets/images/nplay.png" ></image>
+                </view>
+             </view>
+         </view>
+           <view class="newHotSong" >
+             <view class="newHot" >
+                 基本信息
+             </view>
+             <view class="more" >
+                 更多信息
+             </view>
+         </view>
+         <view class="Introce" >
+             <view class="">
+                 昵称  {{main.name}}
+             </view>    
+             <view class="" >
+                 简介  {{main.briefDesc}}
+             </view>
+         </view>
+    </view>
+</view>

@@ -1,0 +1,17 @@
+<view class="box">
+    <view class="margin-box" >
+        <view class="header" >
+            <scroll-view class="tag" scroll-x="true" scroll-y="false" upper-threshold="50" lower-threshold="50" >
+                  <view class="item" wx:for="{{arr}}" wx:key="index" data-item="{{item}}" data-index="{{index}}" bind:tap="item">
+                        <view class="name {{lineControl===index?'colors':''}}">
+                            {{item.name}}
+                        </view>
+                        <view class="line" wx:if="{{lineControl===index}}"></view>
+                      </view>
+            </scroll-view>     
+        </view>
+         <view class="recommend" >
+             <catlistRecommend hotRecommend="{{hotRecommend}}"></catlistRecommend>
+         </view>
+    </view>
+</view>

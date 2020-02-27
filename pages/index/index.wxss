@@ -1,0 +1,161 @@
+.header{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+.header .header-left{
+ width: 30%;
+ height: 60rpx;
+ display: flex;
+ justify-content: flex-end;
+}
+.header .header-left image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+.header .header-left .seaheaderLefttext{
+  font-size: 36rpx;  
+  font-weight: 600;
+  text-align: center;
+  line-height: 60rpx;
+  color: #000;
+  white-space: nowrap;
+}
+.header .header-search{
+width: 70%;
+height: 60rpx;
+display: flex;
+justify-content: flex-start;
+background: #efefef;
+border-radius: 20rpx;
+}
+.header .header-search image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+.header .header-search input{
+  height: 60rpx;
+  margin-left: 15rpx;
+}
+.header .header-right{
+  width: 10%;
+  height: 60rpx;
+  background: red;
+}
+.banner{
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx;
+}
+.banner .swiper-image{
+  width: 100%;
+  height: 100% !important;
+  border-radius: 20rpx;
+}
+.banner .banners{
+  width: 100%;
+  height: 100%;
+}
+.tag{
+  width: 100%;
+  height: 200rpx; 
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.tag .tags{
+  width: 20%;
+}
+.tag .tags .img{
+  width:100%;
+  height: 100rpx;
+  margin-left: 15rpx;
+  overflow: hidden;
+}
+.tag .tags .Text{
+  width: 100%;
+  font-size: 24rpx;
+  color: #666;
+  text-align: center;
+}
+.tags  image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 10rpx;
+}
+.searchRecomment{
+  width:90%;
+  margin-left: 5%;
+}
+.searchRecomment .item{
+  width: 100%;
+  height: 60rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color: #666;
+  border: 2rpx solid #efefef;
+  display: flex;
+  justify-content: flex-start;
+}
+.searchRecomment .item image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 17rpx;
+}
+.searchRecomment .item .keyword{
+  margin-left: 20rpx;
+}
+.searchContent{
+  width: 100%;
+ margin-top: 20rpx;
+ display: flex;
+ flex-direction: row;
+ white-space: nowrap;
+}
+
+.searchContent .scroll{
+  display: flex;
+  flex: 1;
+  white-space: nowrap;
+}
+/* .searchContent .item{
+  display: inline-block;
+  width: 20%;
+  color: #525252;
+  font-size: 32rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+} */
+.searchContent .scroll .item{
+  display: inline-block;
+  color: #525252;
+  font-size: 30rpx;
+  width: 25%;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.searchContent .scroll .item .name{
+  height: 50rpx;
+}
+.searchContent .scroll .item .line{
+  width: 80%;
+  height: 5rpx;
+  background: red ;
+  margin-left: 10%;
+}
+.colors{
+  color: #f46;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,26 @@
+<view class="box" >
+    <view class="margin-box" > 
+    <!-- 用户 -->
+        <view class="user" >
+            <view class="headerTitle" >
+                用户
+            </view>
+           <view class="userItem" wx:for="{{searchAll.userprofiles}}" wx:key="index">
+               <view class="img" >
+                   <image class="" src="{{item.avatarUrl}}"></image>
+               </view>
+               <view class="msg" >
+                   <view class="name1">
+                       {{item.nickname}}
+                   </view>
+                   <view class="name2">
+                       {{item.detailDescription}}
+                   </view>
+               </view>
+           </view>
+           <view class="more" bind:tap="user">
+             查看更多
+           </view>
+        </view>
+    </view>
+</view>

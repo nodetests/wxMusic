@@ -1,0 +1,45 @@
+
+<view class="box">
+    <view class="margin-box">
+        <view class="songName">
+            {{songName}}
+        </view>
+        <view class="play">
+        <image src="{{bgImg}}" alt="" />
+        </view>  
+
+        <view class="tag" >
+            
+        </view>
+    
+        <view class="line" >
+            
+        </view>
+        <view class="menu" >
+            <view class="model1" wx:if="{{modelFlag===0}}">
+              <image class="" src="../../assets/images/oneRandom.png"></image>
+            </view>
+            <view class="model2" wx:if="{{modelFlag===1}}">
+              <image class="" src="../../assets/images/oneAlong.png"></image>
+            </view>
+            <view class="model3" wx:if="{{modelFlag===2}}">
+               <image class="" src="../../assets/images/oneRecycle.png"></image>
+            </view>
+            <view class="before" >
+                <image class="" src="../../assets/images/before.png" bind:tap="before"></image>
+            </view>
+            <view class="plays"  wx:if="{{playFlag===0}}">
+                <image class="" src="../../assets/images/play.png" bind:tap="plays"></image>
+            </view>
+            <view class="pause"  wx:if="{{playFlag===1}}">
+                <image class="" src="../../assets/images/pause.png" bind:tap="pause"></image>
+            </view>
+            <view class="next" >
+                 <image class="" src="../../assets/images/next.png" bind:tap="next"></image>
+            </view>
+            <view class="list" >
+               <image class="" src="../../assets/images/PlayList.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

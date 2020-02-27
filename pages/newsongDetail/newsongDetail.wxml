@@ -1,0 +1,34 @@
+<view class="box">
+    <view class="margin-box" >
+        <view class="header" >
+            <scroll-view class="tag" scroll-x="true" scroll-y="false" upper-threshold="50" lower-threshold="50" >
+                  <view class="item" wx:for="{{arr}}" wx:key="index" data-item="{{item}}" data-index="{{index}}" bind:tap="item">
+                        <view class="name {{lineControl===index?'colors':''}}">
+                            {{item.name}}
+                        </view>
+                        <view class="line" wx:if="{{lineControl===index}}"></view>
+                      </view>
+            </scroll-view>     
+        </view>
+         <view class="recommend" >
+            <view class="newsong">
+                <view class="item" wx:for="{{newSong}}" wx:key="index">
+                        <view class="img" >
+                            <image class="" src="{{item.album.blurPicUrl}}" ></image>
+                        </view>
+                        <view class="song" >
+                            <view class="artist" >
+                                    {{item.name}}-{{item.artists[0].name}}
+                            </view>
+                            <view class="introduce" >
+                                相依直到白首
+                            </view>
+                        </view>
+                        <view class="play" >
+                            <image class="" src="../../assets/images/nplay.png" ></image>
+                        </view>
+                </view>  
+            </view>
+         </view>
+    </view>
+</view>

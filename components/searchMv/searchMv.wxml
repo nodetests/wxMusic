@@ -1,0 +1,27 @@
+ <view class="box" >
+    <view class="margin-box" > 
+        <view class="mlog" >
+                <view class="headerTile" >
+                    Mv
+                </view>
+                <view class="mlogs" >
+                    <view class="mlogItem" wx:for="{{searchAll.mvs}}" wx:key="index">
+                        <view class="img" > 
+                            <image class="" src="{{item.cover}}"></image>
+                        </view>
+                        <view class="msg">
+                            <view class="name1" >
+                                {{item.name}}
+                            </view>
+                            <view class="name2" >
+                                {{item.briefDesc}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                    <view class="more" bind:tap="mlog">
+                    查看更多
+                </view>
+        </view>
+    </view>
+</view>

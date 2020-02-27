@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "catlistRecommend":"../../components/catlistRecommend/catlistRecommend"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "usingComponents": {
+    "recommendSing": "../../components/recommendSing/recommendSing",
+    "newSong":"../../components/newSong/newSong",
+    "show":"../../components/show/show",
+    "rank":"../../components/rank/rank",
+    "searchAll":"../../components/searchAll/searchAll",
+    "searchsongOne":"../../components/searchsongOne/searchsongOne",
+    "searchAblum":"../../components/searchAblum/searchAblum",
+    "searchArtist":"../../components/searchArtist/searchArtist",
+    "searchplayList": "../../components/searchplayList/searchplayList",
+    "searchUser":"../../components/searchUser/searchUser",
+    "searchMv":"../../components/searchMv/searchMv",
+    "searchDj":"../../components/searchDj/searchDj",
+    "searchVideo":"../../components/searchVideo/searchVideo"
+
+    
+  },  
+  "navigationBarBackgroundColor": "#f46",
+  "navigationBarTitleText": "网易云音乐",
+  "navigationBarTextStyle": "white"
+}

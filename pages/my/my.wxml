@@ -1,0 +1,21 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+   <view class="" wx:if="{{usrname}}">
+      <view class="header">
+          欢迎您，{{usrname}}
+      </view>
+   </view>
+   <view class="" wx:else="{{!username}}">
+       <view class="header">
+            <view class="userImg">
+                <image class="../../assets/images/my.png" > </image>
+            </view>
+            <view class="nloginText" >
+                您还未登录
+            </view>
+       </view>
+       <view class="btn">
+           <buttons bind:tap="login">立即登录</buttons>
+       </view>
+        
+   </view>
+</view>
